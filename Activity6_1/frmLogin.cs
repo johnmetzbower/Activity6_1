@@ -26,9 +26,8 @@ namespace Activity6_1
             try
             {
                 //TODO: Your code goes here.
-                Employee oEmployee = new Employee();
-                oEmployee.Login(txtName.Text, txtPassword.Text);
-                MessageBox.Show("Your security level is " + oEmployee.SecurityLevel);
+                
+                MessageBox.Show(NameOne.Text + " & " + NameTwo.Text + " Forever!");
             }
             catch (Exception ex)
             {

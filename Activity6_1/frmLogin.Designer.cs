@@ -30,60 +30,65 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.NameOne = new System.Windows.Forms.TextBox();
+            this.NameTwo = new System.Windows.Forms.TextBox();
+            this.Submit = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 13);
+            this.label1.Location = new System.Drawing.Point(93, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(151, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
+            this.label1.Text = "Name One";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 49);
+            this.label2.Location = new System.Drawing.Point(93, 117);
+            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(150, 32);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Password:";
+            this.label2.Text = "Name Two";
             // 
-            // txtName
+            // NameOne
             // 
-            this.txtName.Location = new System.Drawing.Point(97, 13);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(135, 20);
-            this.txtName.TabIndex = 2;
+            this.NameOne.Location = new System.Drawing.Point(259, 31);
+            this.NameOne.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.NameOne.Name = "NameOne";
+            this.NameOne.Size = new System.Drawing.Size(353, 38);
+            this.NameOne.TabIndex = 2;
             // 
-            // txtPassword
+            // NameTwo
             // 
-            this.txtPassword.Location = new System.Drawing.Point(97, 49);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(135, 20);
-            this.txtPassword.TabIndex = 3;
+            this.NameTwo.Location = new System.Drawing.Point(259, 117);
+            this.NameTwo.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.NameTwo.Name = "NameTwo";
+            this.NameTwo.Size = new System.Drawing.Size(353, 38);
+            this.NameTwo.TabIndex = 3;
             // 
-            // btnLogin
+            // Submit
             // 
-            this.btnLogin.Location = new System.Drawing.Point(38, 87);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.Submit.Location = new System.Drawing.Point(101, 207);
+            this.Submit.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.Submit.Name = "Submit";
+            this.Submit.Size = new System.Drawing.Size(200, 55);
+            this.Submit.TabIndex = 4;
+            this.Submit.Text = "Submit";
+            this.Submit.UseVisualStyleBackColor = true;
+            this.Submit.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(157, 87);
+            this.btnClose.Location = new System.Drawing.Point(419, 207);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(200, 55);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -91,17 +96,19 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.Submit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 122);
+            this.ClientSize = new System.Drawing.Size(821, 291);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.Submit);
+            this.Controls.Add(this.NameTwo);
+            this.Controls.Add(this.NameOne);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "frmLogin";
-            this.Text = "Login";
+            this.Text = "Forever";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,9 +118,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox NameOne;
+        private System.Windows.Forms.TextBox NameTwo;
+        private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.Button btnClose;
     }
 }
